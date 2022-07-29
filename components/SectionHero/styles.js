@@ -4,7 +4,7 @@ import media from "styled-media-query"
 export const Container = styled.section`
   ${({ theme }) => css`
     background: ${theme.colors.white};
-    background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(242,49,165,0.2) 100%);
+    background: linear-gradient(150deg, #FFF 0%, rgba(242,49,165,0.2) 100%);
   `}
 `
 
@@ -23,7 +23,7 @@ export const Content = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     margin: 0 auto;
-    padding: 0;
+    padding: ${({ theme }) => theme.spacings.xlarge} 0 0;
   `}
 
   & > div {
@@ -71,21 +71,19 @@ export const LeftContent = styled.div`
 
   ${media.greaterThan("medium")`
     align-items: flex-start;
-    justify-content: center;
     text-align: initial;
   `}
 `
 
 export const RightContent = styled.div`
   align-items: flex-end;
-  background: url('images/dash.svg') no-repeat center center;
+  background: url('images/dash.svg') no-repeat top center;
   background-size: contain;
   display: flex;
   justify-content: center;
   overflow: hidden;
 
   ${media.greaterThan("medium")`
-    background: url('images/dash.svg') no-repeat center center;
     background-size: contain;
     overflow: hidden;
     position: relative;
@@ -93,11 +91,41 @@ export const RightContent = styled.div`
 `
 
 export const Image = styled.img`
-  transform: translateY(2rem);
+  position: absolute;
+  bottom: -2rem;
   width: 7rem;
 
   ${media.greaterThan("medium")`
-
     width: auto;
+  `}
+`
+
+export const ScrollDown = styled.div`
+  ${({ theme }) => css`
+    border-radius: 1.5rem;
+    border: 2px solid ${theme.colors.primary};
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    margin-top: ${theme.spacings.xxlarge};
+    width: 2.5rem;
+
+    &::after {
+      content: '';
+      animation: move_down 1s ease infinite alternate;
+      background: ${theme.colors.primary};
+      border-radius: 50%;
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+
+    @keyframes move_down {
+      0% { margin-top: 100% }
+      100% { margin-top: .5rem; }
+    }
+
+    ${media.lessThan("medium")`
+      display: none;
+    `}
   `}
 `
