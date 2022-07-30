@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import media from "styled-media-query"
+import { motion } from 'framer-motion'
 
 export const Container = styled.section`
   ${({ theme }) => css`
@@ -63,7 +64,7 @@ export const Content = styled.div`
   }
 `
 
-export const LeftContent = styled.div`
+export const LeftContent = styled(motion.div)`
   display: flex;
   flex-direction: column;
   text-align: center;
