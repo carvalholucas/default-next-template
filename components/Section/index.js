@@ -1,8 +1,10 @@
-import { Container } from './styles'
+import { SectionWrapper } from './styles'
 
-const Section = () => {
+const Section = ({ children }) => {
   return (
-    <Container/>
+    <SectionWrapper>
+      {children}
+    </SectionWrapper>
   )
 }
 

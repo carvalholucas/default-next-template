@@ -1,9 +1,17 @@
 import styled, { css } from 'styled-components'
+import media from "styled-media-query"
 
-export const Container = styled.section`
+export const SectionWrapper = styled.section`
   ${({ theme }) => css`
     background: ${theme.colors.white};
     height: calc(100vh - 8rem);
-    width: 100%;
+
+    & > * {
+      height: 100%;
+    }
+
+    /* ${media.greaterThan("medium")`
+
+    `} */
   `}
 `
