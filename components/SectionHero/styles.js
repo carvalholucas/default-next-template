@@ -24,9 +24,10 @@ export const Content = styled.div`
     grid-gap: 3.2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    padding: 8rem 1.5rem 0;
   `}
 
-  h5 {
+  /* h5 {
     color: #6d7f82;
     font-size: 1.2rem;
     font-weight: 500;
@@ -56,7 +57,7 @@ export const Content = styled.div`
     font-size: 1.6rem;
     line-height: 150%;
     margin-bottom: ${({ theme }) => theme.spacings.large};
-  }
+  } */
 `
 
 export const LeftContent = styled(motion.div)`
