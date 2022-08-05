@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-import media from "styled-media-query"
 
 export const SectionWrapper = styled.section`
   ${({ theme }) => css`
@@ -9,9 +8,5 @@ export const SectionWrapper = styled.section`
     & > * {
       height: 100%;
     }
-
-    /* ${media.greaterThan("medium")`
-
-    `} */
   `}
 `
