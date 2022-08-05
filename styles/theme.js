@@ -7,16 +7,25 @@ export default {
     radius: '0.4rem'
   },
   font: {
-    bold: 600,
     sizes: {
+      xxxsmall: '1.2rem',
       xxsmall: '1.4rem',
       xsmall: '1.6rem',
       small: '1.8rem',
       medium: '2.2rem',
       large: '2.6rem',
-      xlarge: '3.4rem',
+      xlarge: '4.4rem',
       xxlarge: '5.2rem'
-    }
+    },
+    fontWeights: {
+      body: 400,
+      heading: 500,
+      bold: 700,
+    },
+    lineHeights: {
+      body: 1.5,
+      heading: 1.7,
+    },
   },
   colors: {
     primary: '#F231A5',
@@ -25,7 +34,7 @@ export default {
     secondary: '#3CD3C1',
     white: '#FFFFFF',
     black: '#000000',
-    gray: '#E6E6E6'
+    gray: '#CACACA'
   },
   spacings: {
     xxsmall: '0.8rem',

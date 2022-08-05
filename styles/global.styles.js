@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
   ${({ theme }) => css`
     html {
-      /* font-family: ${theme.font.family}; */
+      font-family: 'Fira Sans', sans-serif;
       font-size: 62.5%;
       scroll-behavior: smooth;
     }
@@ -21,7 +21,6 @@ const GlobalStyle = createGlobalStyle`
     body {
       background-color: ${theme.colors.mainBg};
       font-size: ${theme.font.sizes.small};
-      font-family: 'Fira Sans', sans-serif;
     }
 
     a {
