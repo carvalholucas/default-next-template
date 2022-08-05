@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
 import SectionHero from '../components/SectionHero'
+import SectionAboutUs from '../components/SectionAboutUs'
+
 const Home = () => {
   return (
     <Layout>
@@ -14,7 +16,8 @@ const Home = () => {
 
       <Header />
       <SectionHero />
-    </ Layout>
+      <SectionAboutUs />
+    </Layout>
   )
 }
 
