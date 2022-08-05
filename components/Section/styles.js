@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components'
 
 export const SectionWrapper = styled.section`
-  ${({ theme }) => css`
+  ${({ theme, height }) => css`
     background: ${theme.colors.white};
-    height: calc(100vh - 8rem);
+    min-height: ${height === 'flex' ? 'auto' : 'calc(100vh - 8rem)'};
 
     & > * {
       height: 100%;

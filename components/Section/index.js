@@ -1,8 +1,8 @@
 import { SectionWrapper } from './styles'
 
-const Section = ({ children }) => {
+const Section = ({ height, children }) => {
   return (
-    <SectionWrapper>
+    <SectionWrapper height={height}>
       {children}
     </SectionWrapper>
   )
