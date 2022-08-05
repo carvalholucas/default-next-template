@@ -1,4 +1,4 @@
-import { Grid, Wrapper } from './styles'
+import { Grid } from './styles'
 
 const Layout = ({ children }) => {
   return (
@@ -9,11 +9,3 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
-
-export const Container = ({ children }) => {
-  return (
-    <Wrapper>
-      {children}
-    </Wrapper>
-  )
-}

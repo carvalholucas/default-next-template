@@ -7,10 +7,3 @@ export const Grid = styled.main`
   height: 100%;
   min-height: 100vh;
 `
-
-export const Wrapper = styled.main`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 2rem;
-`
