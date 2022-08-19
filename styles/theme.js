@@ -31,6 +31,7 @@ export default {
     primary: '#F231A5',
     primaryHover: '#E20E8D',
     primaryFocus: '#ffcfec',
+    primaryGradient: 'linear-gradient(150deg, #FFF 0%, rgba(242,49,165,0.2) 100%)',
     secondary: '#3CD3C1',
     white: '#FFFFFF',
     black: '#000000',
