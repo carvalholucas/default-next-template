@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import Header from '../components/Header'
 import SectionHero from '../components/SectionHero'
 import SectionAboutUs from '../components/SectionAboutUs'
+import SectionServices from '../components/SectionServices'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Header />
       <SectionHero />
       <SectionAboutUs />
+      <SectionServices />
     </Layout>
   )
 }
