@@ -2,22 +2,12 @@ import styled, { css } from 'styled-components'
 import media from "styled-media-query"
 import { motion } from 'framer-motion'
 
-export const Container = styled.div`
-  ${({ theme }) => css`
-    background: ${theme.colors.white};
-    background: linear-gradient(150deg, #FFF 0%, rgba(242,49,165,0.2) 100%);
-    display: flex;
-    justify-content: center;
-  `}
-`
-
 export const Content = styled.div`
   display: grid;
   grid-gap: 3.2rem;
-  grid-template-rows: repeat(2, 1fr);
-  max-width: 1280px;
+  grid-template-rows: 1fr .5fr;
+  height: 100%;
   padding: 5rem 2rem 0;
-  width: 100%;
 
   ${media.greaterThan("medium")`
     display: grid;
@@ -26,38 +16,6 @@ export const Content = styled.div`
     grid-template-rows: auto;
     padding: 8rem 1.5rem 0;
   `}
-
-  /* h5 {
-    color: #6d7f82;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 125%;
-    margin-bottom: 1.2rem;
-
-    ${media.greaterThan("medium")`
-      font-size: 2rem;
-    `}
-  }
-
-  h1 {
-    color: #1a1c1e;
-    font-size: 2.4rem;
-    font-weight: 500;
-    line-height: 150%;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-
-    ${media.greaterThan("medium")`
-      font-size: 4.2rem;
-    `}
-  }
-
-  p {
-    color: #465b6f;
-    font-size: 1.6rem;
-    line-height: 150%;
-    margin-bottom: ${({ theme }) => theme.spacings.large};
-  } */
 `
 
 export const LeftContent = styled(motion.div)`
@@ -89,7 +47,7 @@ export const RightContent = styled.div`
 
 export const Image = styled.img`
   position: absolute;
-  bottom: -2rem;
+  bottom: -5rem;
   width: 8rem;
 
   ${media.greaterThan("medium")`

@@ -1,9 +1,21 @@
-import { SectionWrapper } from './styles'
+import {
+  SectionWrapper,
+  Container
+} from './styles'
 
-const Section = ({ height, children }) => {
+const Section = ({
+  color,
+  height,
+  children
+}) => {
   return (
-    <SectionWrapper height={height}>
-      {children}
+    <SectionWrapper
+      color={color}
+      height={height}
+    >
+      <Container>
+        {children}
+      </Container>
     </SectionWrapper>
   )
 }
