@@ -7,7 +7,7 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  padding: 2rem;
+  padding: 2.5rem;
 `
 
 export const Image = styled.div`
